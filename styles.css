@@ -62,7 +62,7 @@ i:hover {
 
 }
 
-/* Landscape phones and down */
+/* Landscape phones and down
 @media (max-width: 480px) {
     h1 {
         font-size: 30px;
@@ -70,5 +70,5 @@ i:hover {
     ul {
         flex-direction: column;
     }
-}
+} */
 
