@@ -9,11 +9,19 @@ body {
     background-color: #FFB6C1;
 }
 
+.wrapper {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: slategray;
     font-size: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 img {
@@ -26,6 +34,8 @@ ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 i {
@@ -33,5 +43,27 @@ i {
     display: block;
     color: slategray;
     margin: 10px;
+}
+
+i:hover {
+    color: darkslategray;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    ul {
+        flex-direction: column;
+    }
 }
 
