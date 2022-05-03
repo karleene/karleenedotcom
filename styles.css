@@ -4,6 +4,17 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* 
+:root {
+    --darkgreen: #1f2d2e;
+    --lightgreen: #234534;
+    --orange: #ED6B55;
+}
+
+body {
+    background: var(--orange);
+}
+*/
 
 body {
     background-color: #FFB6C1;
@@ -28,9 +39,11 @@ img {
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    transition: 1s;
 }
 
-img:hover {
+img:hover,
+img:focus {
     width: 120px;
     height: 120px;
 }
@@ -41,6 +54,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-basis: calc(100% / 4);
 }
 
 i {
@@ -48,10 +62,13 @@ i {
     display: block;
     color: slategray;
     margin: 10px;
+    transition: 0.5s
 }
 
-i:hover {
+i:hover,
+i:focus {
     color: darkslategray;
+    cursor: pointer;
 }
 
 /* Landscape phone to portrait tablet */
