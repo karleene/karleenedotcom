@@ -136,6 +136,10 @@ footer p {
     .socials {
         justify-content: flex-start;
     }
+
+    h1 {
+        font-size: 70px;
+    }
 }
 
 /* Landscape phones and down */
@@ -148,6 +152,9 @@ footer p {
     }
     .socials {
         justify-content: flex-start;
+    }
+    h1 {
+        font-size: 70px;
     }
 }
 
