@@ -4,88 +4,150 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* 
-:root {
-    --darkgreen: #1f2d2e;
-    --lightgreen: #234534;
-    --orange: #ED6B55;
-}
 
 body {
-    background: var(--orange);
-}
-*/
-
-body {
-    background-color: #FFB6C1;
+    /* background-color: #FFB6C1; */
+    background: linear-gradient(to right, #DB7093, #9370DB);
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     max-width: 1080px;
     margin: 0 auto;
 }
 
 
 h1 {
+    font-family: 'Londrina Outline', cursive;
+    color: dimgray;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+h2 {
     font-family: 'Montserrat', sans-serif;
-    color: slategray;
-    font-size: 50px;
+    color: dimgray;
+    font-size: 25px;
     text-transform: uppercase;
     text-align: center;
 }
 
+h3 {
+    font-family: 'Londrina Outline', cursive;
+    color: dimgray;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+}
+
 img {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     transition: 1s;
+    margin: 0 50px;
 }
 
 img:hover,
 img:focus {
-    width: 120px;
-    height: 120px;
+    width: 240px;
+    height: 240px;
 }
 
-ul {
+.navigation {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-basis: calc(100% / 4);
+}
+
+.socials {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(100% / 3);
 }
 
 i {
     font-size: 50px;
     display: block;
-    color: slategray;
+    color: dimgray;
     margin: 10px;
     transition: 0.5s
 }
 
 i:hover,
 i:focus {
-    color: darkslategray;
+    color: darkslategrey;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: dimgray;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+a:hover, a:focus {
+    color: darkslategrey;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.intro {
+    margin: 200px 0;
+}
+
+.info {
+    display: flex;
+}
+
+
+footer p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin: 25px 0;
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 40px;
-    }
+    .navigation {
+            flex-direction: column;
+        }
+    .info {
+        flex-direction: column;
+    }    
 
+    .socials {
+        justify-content: flex-start;
+    }
 }
 
-/* Landscape phones and down
+/* Landscape phones and down */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 30px;
-    }
-    ul {
+    .navigation {
         flex-direction: column;
     }
-} */
+    .info {
+        flex-direction: column;
+    }
+    .socials {
+        justify-content: flex-start;
+    }
+}
 
