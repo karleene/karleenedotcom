@@ -124,12 +124,35 @@ footer p {
     margin: 25px 0;
 }
 
+.burgerMenu {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.hamburgerMenu {
+    list-style: none;
+    position: absolute;
+    left: -50px;
+}
+
+nav {
+    position: relative;
+}
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+    .burgerMenu {
+        display: block;
+    }
     .navigation {
-            flex-direction: column;
-            align-items: flex-start;
+        display: none;
         }
+
     .info {
         flex-direction: column;
     }    
@@ -138,23 +161,6 @@ footer p {
         justify-content: flex-start;
     }
 
-    h1 {
-        font-size: 70px;
-    }
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-    .navigation {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .info {
-        flex-direction: column;
-    }
-    .socials {
-        justify-content: flex-start;
-    }
     h1 {
         font-size: 70px;
     }
